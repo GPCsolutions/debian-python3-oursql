@@ -1,0 +1,15 @@
+Source: oursql
+Maintainer: Raphaël Doursenaud <rdoursenaud@gpcsolutions.fr>
+Section: python
+Priority: optional
+Build-Depends: python3-setuptools, python3-all-dev, debhelper (>= 7),  libmysqlclient-dev (>= 4.1.2), python-support
+X-Python3-Version: >= 3.0
+Standards-Version: 3.9.1
+
+Package: python3-oursql
+Architecture: any
+Depends: ${misc:Depends}, ${python3:Depends}, libmysqlclient18
+Description: MySQL bindings for python.
+ Oursql is a set of MySQL bindings for python 2.4+ with a focus on 
+ wrapping the `MYSQL_STMT API`__ to provide real parameterization and 
+ real server-side cursors.
